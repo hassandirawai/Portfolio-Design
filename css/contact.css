@@ -1,0 +1,129 @@
+.contact {
+    background-color: var(--bgcolorsecondary);
+    padding: 4em 1em;
+    position: relative;
+    border: 1px solid;
+}
+
+.contact-container {
+    position: relative;
+}
+
+.contact-container .contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-container .contact-content h2 {
+    font-weight: 600;
+}
+
+.contact-container .contact-content p {
+    margin-top: 1.25em;
+    margin-bottom: 1.5em;
+    font-size: .92em;
+}
+
+.contact-container .contact-content .contact-sm {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+}
+
+.contact-sm a p {
+    font-size: .9em;
+}
+
+.contact-sm a {
+    transition: .4s;
+}
+
+.contact-sm a:hover {
+    color: #564A03;
+}
+
+.contact-container .contact-form {
+    background-color: #F0EBCC;
+    border: 2px solid;
+    border-radius: 3px;
+    box-shadow: .2em .2em 0px 0px black;
+    padding: 2em;
+    width: 100%;
+    max-width: 20.5em;
+    position: relative;
+    z-index: 100;
+}
+
+.contact-container .contact-form div {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+    margin-bottom: 1em;
+}
+
+.contact-container .contact-form div label {
+    font-size: .92em;
+    font-weight: 500;
+}
+
+.contact-container .contact-form div input {
+    width: 100%;
+    padding: .8em;
+    border: 2px solid;
+    border-radius: 3px;
+    background-color: #DCD5AD;
+}
+
+.contact-container .contact-form div textarea {
+    padding: .8em;
+    border: 2px solid;
+    border-radius: 3px;
+    background-color: #DCD5AD;
+    resize: vertical;
+    min-height: 3.35em;   
+}
+
+.contact-container .contact-form button {
+    background-color: var(--primarycolor);
+    padding: .65em .95em;
+    border: 2px solid;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px 1px black;
+    font-size: 1em;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.contact-container .contact-form button i {
+    padding-left: .5em;
+    padding-top: .2em;
+}
+
+.contact-container .contact-form button:hover,
+.contact-container .contact-form button:focus {
+    background: #f5b803;
+    translate: 0em -.2em;
+}
+
+.contact .contact-watermark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: var(--bgcolorshade);
+}
+
+@media (max-width: 960px) {
+    .contact-container {
+        gap: 1.8em;
+    }
+    .contact-container .contact-form {
+        margin: 0 auto;
+    }
+}

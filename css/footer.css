@@ -1,0 +1,91 @@
+footer {
+    background-color: white;
+    padding: 4em 1em;
+    position: relative;
+}
+
+.footer-container {
+    row-gap: 1.8em;
+}
+
+.footer-container > * {
+    margin: 0 auto;
+}
+
+.footer-container .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.35em;
+}
+
+.footer-container .footer-left h2 {
+    background-color: var(--primarycolor);
+    padding: .65em .45em;
+    border: 2px solid;
+    border-radius: 3px;
+    box-shadow: .2em .2em 0px 0px black;
+    font-size: 1em;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.footer-container .footer-left p {
+    font-weight: 100;   
+    font-size: .75em;
+}
+
+.footer-container .footer-mid {
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    gap: .6em;
+}
+
+.footer-container .footer-mid a {
+    font-size: .95em;
+}
+
+.footer-container .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+    font-size: .95em;
+}
+
+.footer-container .footer-right > p {
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.footer-container .footer-mid > *,
+.footer-container .footer-right > * {
+    transition: .4s;
+}
+
+.footer-container .footer-mid > *:hover {
+    color: #635502;
+}
+
+.footer-container .footer-right > *:not(.footer-right p):hover {
+    color: #635502;
+}
+
+.footer-fixed-btn {
+    background-color: #f5b103;
+    border: 2px solid;
+    border-radius: 100%;
+    box-shadow: .2em .2em 0px -3px black;
+    padding: .7em;
+    position: fixed;
+    bottom: 1.5em;
+    right: 2em;
+    z-index: 9999;
+    transition: .4s ease-in-out;
+}
+
+.footer-fixed-btn:hover,
+.footer-fixed-btn:focus {
+    background-color: #ffce08;
+    transform: 
+    rotate(360deg);
+}

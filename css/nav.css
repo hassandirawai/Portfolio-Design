@@ -1,0 +1,138 @@
+.main-header {
+    padding: 0px 1.3em;
+    background-color: var(--bgcolor);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    font-size: .85em;
+    transition: .4s;
+}
+
+.main-header.sticking {
+    background-color: #faf8ecc7;
+    backdrop-filter: saturate(180%) blur(5px);
+    box-shadow: 0.1rem 0.1rem 0.6rem rgb(0 0 0 / 20%);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60em;
+    width: 100%;
+    margin: 0px auto;
+    padding: 1em 0em;
+    transition: .4s;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    transition: .3s;
+}
+
+.header-nav .header-link a {
+    transition: all .4s;
+}
+
+.header-nav .header-link :hover {
+    color: var(--navactivecolor);
+    box-shadow: 0em -.5em 0 -.38em var(--navactivecolor) inset;
+    padding-bottom: .22em;
+}
+
+.header-nav .nav-contact-btn {
+    background-color: var(--primarycolor);
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px 1px black;
+    transition: .3s;
+}
+
+.header-nav .nav-contact-btn i {
+    padding-left: .5em;
+}
+
+.header-nav .nav-contact-btn:hover,
+.header-nav .nav-contact-btn:focus {
+    background: #f5b803;
+    scale: 1.1;
+}
+
+.header-logo {
+    font-size: 1.4em;
+}
+
+.header-logo ::after {
+    content: "✦";
+    color: var(--primarycolor);
+    font-size: 1.1em;
+    text-shadow: 3px 1px 1px black;
+    margin-left: .25em;
+}
+
+.humburger-btn {
+    display: none;
+    background-color: var(--primarycolor);
+    border: 2px solid;
+    border-radius: 3px;
+    box-shadow: .2em .2em 0px 0px black;
+    cursor: pointer;
+}
+
+.humburger-btn .humburger-btn-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: .3em;
+    background-color: black;
+    transition: transform .4s ease-in-out;
+}
+
+.header-nav[data-visible="true"] {
+    transform: translateX(0);
+}
+
+.header-container .humburger-btn[aria-expanded="true"] .humburger-btn-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.header-container .humburger-btn[aria-expanded="true"] .humburger-btn-bar:nth-child(1) {
+    transform: 
+    translateY(0.5em) 
+    rotate(45deg);
+}
+
+.header-container .humburger-btn[aria-expanded="true"] .humburger-btn-bar:nth-child(3) {
+    transform: 
+    translateY(-0.5em) 
+    rotate(-45deg);
+}
+
+@media (max-width: 960px) {
+    .header-nav {
+        position: fixed;
+        top: 4em;
+        right: 0;
+        left: 0;
+        background-color: #f3f1e5;
+        padding: 2em 1em;
+        border: 2px solid;
+        border-radius: 0px;
+        box-shadow: .2em .2em 0px 0px black;
+        transform: translateX(-110%);
+        transition: transform .4s ease-out;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    .humburger-btn {
+        display: block;
+    }
+}

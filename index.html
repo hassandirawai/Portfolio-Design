@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- nav section -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="#Home">VONDOOM</a>
+            </div>
+            <nav 
+            data-visible="false"
+            id="header-nav"
+            class="header-nav">
+                <ul>
+                    <li class="header-link"><a href="#Home">Home</a></li>
+                    <li class="header-link"><a href="#About-me">About me</a></li>
+                    <li class="header-link"><a href="#Projects">Projects</a></li>
+                    <li class="header-link"><a href="#Skills">Skills</a></li>
+                    <li class="nav-contact-btn">
+                        <a href="mailto:majorchaor88jp@gmail.com">
+                            Contact<i class="fa-solid fa-paper-plane fa-xs"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div aria-controls="header-nav" aria-expanded="false" class="humburger-btn">
+                <span class="humburger-btn-bar"></span>
+                <span class="humburger-btn-bar"></span>
+                <span class="humburger-btn-bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- main page section -->
+    <main id="Home">
+        <div class="main-container container">
+            <div class="herocontent">
+                <p class="skill">MOBILE/WEB Programer and Developer</p>
+                <div class="heading">
+                    <h1 class="herocontent-heading">
+                        Crafting
+                        <span class="hero-span">Spectacular</span>
+                        <span class="hero-span">Web/Mobile</span>
+                        <span>Apps</span>
+                    </h1>
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus porro a dolorum earum ipsum dicta nam adipisci quidem sunt doloribus nulla tenetur autem, quasi veniam fugit magnam soluta hic aliquam.</p>
+                </div>
+                <div class="herocontent-btns">
+                    <a href="#Projects" class="primarybtn">
+                        <span>
+                            My Projects
+                            <i class="fa-solid fa-folder fa-xs"></i>
+                        </span>
+                    </a>
+                    <a href="#About-me" class="secondarybtn">
+                        <span>
+                            About Me
+                            <i class="fa-regular fa-arrow-down fa-xs"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="mousescroll">
+                    <a href="#About-me">
+                        <span class="mouse">
+                            <span class="mouse-movement"></span>
+                        </span>
+                        <span class="mouse-message">Scroll</span>
+                    </a>
+                </div>
+            </div>
+            <div class="heroimage">
+                <img src="/res/img/jack.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <!-- about-me page section -->
+    <section id="About-me" class="about">
+        <div class="about-container container">
+            <div class="about-content">
+                <div class="about-heading heading">
+                    <h2>Its Nice To Meet You</h2>
+                    <p>About Me</p>
+                </div>
+                <div class="about-details">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, temporibus? Distinctio veniam odio autem deserunt neque, accusantium dolore nam alias corporis repellat, aliquid, ullam maxime assumenda non! Quaerat, itaque. Eum.
+                </div>
+                <div class="about-btn">
+                    <a href="#Resume">
+                        Resume
+                        <i class="fa-regular fa-arrow-down fa-xs"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="/res/img/about-img.png" alt="">
+            </div>
+        </div>
+        <div class="about-watermark"></div>
+    </section>
+
+    <!-- projects page section -->
+    <section id="Projects" class="projects">
+        <div class="projects-container container">
+            <div class="projects-content">
+                <div class="projects-heading">
+                    <h2>Take A Look</h2>
+                    <p>Projects</p>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <a href="#non">
+                    <div>first project ✨</div>
+                </a>
+                <a href="#non">
+                    <div>second project ✨</div>
+                </a>
+                <a href="#non">
+                    <div>third project ✨</div>
+                </a>
+                <a href="#non">
+                    <div>fourth project ✨</div>
+                </a>
+                <a href="#non">
+                    <div>fith project ✨</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills page section -->
+    <section id="Skills" class="skills">
+        <div class="skills-container container">
+            <div class="skills-content">
+                <div class="skills-heading">
+                    <h2>Take A Look</h2>
+                    <p>Skills</p>
+                </div>
+            </div>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <p>Html5</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                    <p>Css3</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java fa-2xl"></i>
+                    <p>Java</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <p>Kotlin</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma fa-2xl"></i>
+                    <p>Figma</p>
+                </div>
+            </div>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <p>Photoshop</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <p>Php</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-c fa-2xl"></i>
+                    <p>C++</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <p>Canva</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma fa-2xl"></i>
+                    <p>VS.net</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact page section -->
+    <section id="Contact" class="contact">
+        <div class="contact-container container">
+            <div class="contact-content">
+                <h2>Lets Connect</h2>
+                <p>
+                    Ready to bring your ideas to life? I'm excited to collaborate with you 
+                    on your next project. Whether you have a question, or simply want to 
+                    say hello, feel free to send me a message.
+                </p>
+                <div class="contact-sm">
+                    <a href="#Facebook">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                        <p>Facebook</p>
+                    </a>
+                    <a href="#Instagram">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                        <p>Instagram</p>
+                    </a>
+                    <a href="#Telegram">
+                        <i class="fa-brands fa-telegram fa-xl"></i>
+                        <p>Telegram</p>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="Contact-Form" action="https://formspree.io/f/xqkvgvzq" method="POST">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required="">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required="">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required="">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">
+                        Sumbit<i class="fa-solid fa-paper-plane fa-xs"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="contact-watermark"></div>
+    </section>
+
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-left">
+                <h2>V.D</h2>
+                <p>© 2023 VONDOOM. All Rights reserved.</p>
+            </div>
+            <div class="footer-mid">
+                <a class="footer-mid-link" href="#Home">Home</a>
+                <a class="footer-mid-link" href="#About-me">About me</a>
+                <a class="footer-mid-link" href="#Projects">Projects</a>
+                <a class="footer-mid-link" href="#Skills">Skills</a>
+                <a class="footer-mid-link" href="#Contact">Contact</a>
+            </div>
+            <div class="footer-right">
+                <p>Follow Me</p>
+                <a href="#Facebook">
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                    <p>Facebook</p>
+                </a>
+                <a href="#Instagram">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    <p>Instagram</p>
+                </a>
+                <a href="#Telegram">
+                    <i class="fa-brands fa-telegram fa-lg"></i>
+                    <p>Telegram</p>
+                </a>
+            </div>
+        </div>
+        <a class="footer-fixed-btn" href="mailto:majorchaor88jp@gmail.com">
+            <i class="fa-solid fa-envelope fa-xl"></i>
+        </a>
+    </footer>
+
+    <!-- aos library -2xl -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- nav mobile logic -->
+    <script src="/script/mobileNavVersion.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
